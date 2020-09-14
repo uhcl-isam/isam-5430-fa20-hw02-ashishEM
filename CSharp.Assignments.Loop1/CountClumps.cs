@@ -17,6 +17,37 @@ namespace CSharp.Assignments.Loop1
         public static void Main()
         {
             // Write your codes here
+
+            int count = 0;
+            int prev = 0;
+            int clumps = 0;
+            bool first = true;
+            for (; ; )
+            {
+                string s = Console.ReadLine();
+                if (s == null) break;
+                int n = int.Parse(s);
+                if (first == true)
+                {
+                    prev = n;
+                    first = false;
+                }
+                else
+                {
+                    if (prev == n)
+                    {
+                        count++;
+                        if (count == 2)
+                        {
+                            clumps++;
+                        }
+                        else { count = 1; }
+                    }
+
+                }
+                prev = n;
+            }
+            Console.WriteLine(clumps);
         }
     }
 }

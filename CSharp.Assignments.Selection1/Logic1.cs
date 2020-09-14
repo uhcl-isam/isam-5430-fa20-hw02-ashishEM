@@ -14,8 +14,22 @@ namespace CSharp.Assignments.Loop1
         /// <returns></returns>
         public static bool CigarParty(int cigars, bool isWeekend)
         {
-            // throw new NotImplementedException();
-            return true;
+            //throw new NotImplementedException();
+
+            int upper = 60;
+            if (isWeekend == true)
+            {
+                upper = Int32.MaxValue;
+
+            }
+            if (cigars >= 40 && cigars <= upper)
+
+            {
+                return true;
+            }
+
+            return false;
+
         }
 
         /// <summary>
@@ -26,7 +40,24 @@ namespace CSharp.Assignments.Loop1
         /// <returns></returns>
         public static int CaughtSpeeding(int speed, bool birthday)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
+
+            if (birthday)
+            {
+                speed = speed - 5;
+            }
+
+            if (speed >= 61 && speed <= 80)
+            {
+                return 1;
+            }
+            else if (speed >= 81)
+            {
+                return 2;
+            }
+
+            return 0;
+
         }
 
         /// <summary>
@@ -37,7 +68,23 @@ namespace CSharp.Assignments.Loop1
         /// <returns></returns>
         public static bool Love6(int a, int b)
         {
-            throw new NotImplementedException();
+            // throw new NotImplementedException();
+
+            if (a == 6 || b == 6)
+            {
+                return true;
+
+            }
+            else if (a - b == 6 || b - a == 6)
+            {
+                return true;
+            }
+            else if (a + b == 6 || b + a == 6)
+            {
+                return true;
+            }
+            return false;
+
         }
 
         /// <summary>
@@ -47,7 +94,14 @@ namespace CSharp.Assignments.Loop1
         /// <returns></returns>
         public static bool More20(int num)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
+
+            int m;
+            m = num % 20;
+            if (m == 1 || m == 2)
+                return true;
+            return false;
+
         }
 
         /// <summary>
@@ -57,7 +111,15 @@ namespace CSharp.Assignments.Loop1
         /// <returns></returns>
         public static bool NearTen(int num)
         {
-            throw new NotImplementedException();
+            // throw new NotImplementedException();
+
+            int m = num % 10;
+            if ((m >= 0 && m < 3) || (m == 8 || m == 9))
+            {
+                return true;
+            }
+            return false;
+
         }
 
         /// <summary>
@@ -68,7 +130,17 @@ namespace CSharp.Assignments.Loop1
         /// <returns></returns>
         public static int TeaParty(int tea, int candy)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
+
+            if (tea < 5 || candy < 5)
+                return 0;
+            else if ((tea >= candy * 2) || (candy >= tea * 2))
+                return 2;
+            else if (tea >= 5 && candy >= 5)
+                return 1;
+
+            return 0;
+
         }
 
         /// <summary>
@@ -79,7 +151,19 @@ namespace CSharp.Assignments.Loop1
         /// <returns></returns>
         public static bool SquirrelPlay(int temperature, bool isSummer)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
+
+            int upperLimit = 90;
+            if (isSummer)
+            {
+                upperLimit = 100;
+            }
+            if (temperature >= 60 && temperature <= upperLimit)
+            {
+                return true;
+            }
+            return false;
+
         }
 
         /// <summary>
@@ -96,7 +180,31 @@ namespace CSharp.Assignments.Loop1
         /// <returns>either: "7:00" or "10:00" or "off"</returns>
         public static string AlarmClock(DayOfWeek dayOfWeek, bool vacation)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
+
+            if (vacation)
+            {
+                if (dayOfWeek.Equals(DayOfWeek.Sunday) || dayOfWeek.Equals(DayOfWeek.Saturday))
+                {
+                    return "off";
+                }
+                else
+                {
+                    return "10:00";
+                }
+            }
+            else
+            {
+                if (dayOfWeek.Equals(DayOfWeek.Sunday) || dayOfWeek.Equals(DayOfWeek.Saturday))
+                {
+                    return "10:00";
+                }
+                else
+                {
+                    return "7:00";
+                }
+            }
+
         }
 
 
@@ -109,7 +217,21 @@ namespace CSharp.Assignments.Loop1
         /// <returns></returns>
         public static bool AnswerCell(bool isMorning, bool isMom, bool isAsleep)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
+
+            if (isAsleep)
+                return false;
+
+            if (isMorning)
+            {
+                if (isMom)
+                    return true;
+                else
+                    return false;
+            }
+            return true;
+
+
         }
 
 
@@ -123,7 +245,9 @@ namespace CSharp.Assignments.Loop1
         /// <param name="number">Number.</param>
         public static bool IsHilly(int number)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
+
+            return false;
         }
 
         /// <summary>
@@ -135,7 +259,23 @@ namespace CSharp.Assignments.Loop1
         /// <returns></returns>
         public static bool CloseFar(int a, int b, int c)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
+
+            if (a == b || a == b + 1 || a == b - 1)
+            {
+                if (Math.Abs(a - c) >= 2 && Math.Abs(b - c) >= 2)
+                    return true;
+            }
+            else if (a == c || a == c + 1 || a == c - 1)
+            {
+                if (Math.Abs(a - b) >= 2 && Math.Abs(b - c) >= 2)
+                    return true;
+            }
+            return false;
+
         }
     }
+
 }
+
+
