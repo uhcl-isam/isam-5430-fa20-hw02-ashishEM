@@ -14,7 +14,8 @@ namespace CSharp.Assignments.Loop1
         /// <returns></returns>
         public static bool CigarParty(int cigars, bool isWeekend)
         {
-            throw new NotImplementedException();
+            // throw new NotImplementedException();
+            return true;
         }
 
         /// <summary>
