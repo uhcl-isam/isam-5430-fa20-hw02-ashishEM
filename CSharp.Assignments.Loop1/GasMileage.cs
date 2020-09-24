@@ -2,7 +2,7 @@
 using static System.Console;
 namespace CSharp.Assignments.Loop1
 {
-    /// <summary>
+    /// <summary>//
     /// Drivers are concerned with the mileage their automobiles get.
     /// One driver has kept track of several tankfuls of gasoline by 
     /// recording the miles driven and gallons used for each tankful. 

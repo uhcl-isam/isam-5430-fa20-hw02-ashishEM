@@ -2,7 +2,7 @@
 using static System.Console;
 namespace CSharp.Assignments.Loop1
 {
-    /// <summary>
+    /// <summary>//
     /// Develop a C# app that will determine whether any of several
     /// department-store customers has exceeded the credit limit on a charge
     /// account. For each customer, the following facts are available:

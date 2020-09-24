@@ -1,7 +1,7 @@
 ﻿using System;
 namespace CSharp.Assignments.Loop1
 {
-    /// <summary>
+    /// <summary>//
     /// A palindrome is a sequence of characters that reads the same backward
     /// as forward. For example, each of the following five-digit integers
     /// is a palindrome: 12321, 55555, 45554 and 11611. 

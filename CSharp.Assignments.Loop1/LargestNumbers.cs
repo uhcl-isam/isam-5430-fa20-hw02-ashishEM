@@ -1,7 +1,7 @@
 ﻿using System;
 namespace CSharp.Assignments.Loop1
 {
-    /// <summary>
+    /// <summary>//
     /// The process of finding the maximum value (i.e., the largest
     /// of a group of values) is used frequently in computer applications.
     /// For example, an app that determines the winner of a sales contest
