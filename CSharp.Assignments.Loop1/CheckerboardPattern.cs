@@ -20,7 +20,7 @@ namespace CSharp.Assignments.Loop1
     /// * * * * * * * *
     ///  * * * * * * * *
     /// </example>
-    /// </summary>
+    /// </summary>//
     public class CheckerboardPattern
     {
         public static void Main()
