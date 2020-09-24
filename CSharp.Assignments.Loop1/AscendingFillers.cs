@@ -84,7 +84,7 @@ namespace CSharp.Assignments.Loop1
                     }
                 }
                 Console.WriteLine(filler);
-
+                
             }
         }
     }
